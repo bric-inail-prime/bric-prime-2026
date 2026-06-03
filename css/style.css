@@ -1,7 +1,6 @@
 /* ============================================================
    PRIME — BRIC INAIL 2026
-   Structure faithfully mirrors site.unibo.it/mac4pro/it
-   Colors: INAIL blue #003087 / white
+   Colors: #012d5c (primary) / #17807f (accent)
    ============================================================ */
 
 /* ---- RESET & BASE ---- */
@@ -15,13 +14,13 @@ body {
     line-height: 1.6;
 }
 
-a { color: #003087; text-decoration: none; }
-a:hover { text-decoration: underline; color: #0055c4; }
+a { color: #012d5c; text-decoration: none; }
+a:hover { text-decoration: underline; color: #17807f; }
 strong, b { font-weight: bold; }
 p { margin-bottom: 10px; }
 ul { margin: 8px 0 8px 22px; }
 ul li { margin-bottom: 4px; }
-h1, h2, h3, h4 { color: #003087; }
+h1, h2, h3, h4 { color: #012d5c; }
 
 /* ============================================================
    HEADER  (#u-header)
@@ -44,7 +43,7 @@ h1, h2, h3, h4 { color: #003087; }
     position: static;
     width: auto;
     height: auto;
-    background: #003087;
+    background: #012d5c;
     padding: 6px 20px;
 }
 #u-hiddenKeys a {
@@ -70,7 +69,7 @@ h1, h2, h3, h4 { color: #003087; }
 /* CSS banner replacing the graphic image */
 .prime-banner {
     width: 100%;
-    background: linear-gradient(135deg, #003087 0%, #0055A5 60%, #003087 100%);
+    background: linear-gradient(135deg, #012d5c 0%, #17807f 60%, #012d5c 100%);
     padding: 22px 40px 22px 40px;
     display: flex;
     align-items: center;
@@ -86,6 +85,13 @@ h1, h2, h3, h4 { color: #003087; }
     flex-shrink: 0;
     line-height: 1;
     text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.prime-banner-logo {
+    height: 70px;
+    width: auto;
+    flex-shrink: 0;
+    object-fit: contain;
+    border-radius: 4px;
 }
 .prime-banner-divider {
     width: 2px;
@@ -118,11 +124,11 @@ h1, h2, h3, h4 { color: #003087; }
     color: #888;
     margin-bottom: 4px;
 }
-.textual-header .alma:hover { color: #003087; }
+.textual-header .alma:hover { color: #012d5c; }
 .textual-header .text-wrap {
     display: block;
     font-size: 14px;
-    color: #003087;
+    color: #012d5c;
     font-weight: 600;
     line-height: 1.4;
 }
@@ -135,7 +141,7 @@ h1, h2, h3, h4 { color: #003087; }
    ============================================================ */
 
 .menu-container {
-    background: #003087;
+    background: #012d5c;
 }
 
 #u-main-menu {
@@ -187,7 +193,7 @@ ul.main-menu > li.selected > a {
 }
 
 ul.main-menu > li.selected > a {
-    border-bottom-color: #fff;
+    border-bottom-color: #17807f;
 }
 
 /* Submenu toggle button */
@@ -201,7 +207,7 @@ ul.main-menu > li > ul {
     position: absolute;
     top: 100%;
     left: 0;
-    background: #001F5B;
+    background: #011d3d;
     min-width: 200px;
     z-index: 200;
     list-style: none;
@@ -223,7 +229,7 @@ ul.main-menu > li > ul > li > a {
     transition: background 0.15s;
 }
 ul.main-menu > li > ul > li > a:hover {
-    background: rgba(255,255,255,0.12);
+    background: rgba(23,128,127,0.25);
     text-decoration: none;
 }
 
@@ -232,9 +238,9 @@ ul.main-menu > li > ul > li > a:hover {
    ============================================================ */
 
 #u-toolbar {
-    background: #f0f4f9;
-    border-top: 1px solid #dde5f0;
-    border-bottom: 1px solid #dde5f0;
+    background: #f0f6f6;
+    border-top: 1px solid #cde3e3;
+    border-bottom: 1px solid #cde3e3;
     padding: 0 40px;
 }
 
@@ -255,7 +261,7 @@ ul.main-menu > li > ul > li > a:hover {
     flex-wrap: wrap;
     gap: 4px;
 }
-.breadcrumbs a { color: #003087; }
+.breadcrumbs a { color: #012d5c; }
 .breadcrumbs a:hover { text-decoration: underline; }
 #breadcrumbs-you-are-here {
     font-style: italic;
@@ -279,19 +285,19 @@ ul.main-menu > li > ul > li > a:hover {
     border: 1px solid transparent;
 }
 .tool-bar > a.share:hover {
-    background: #e2eaf5;
-    border-color: #c0cfe8;
+    background: #dff0ef;
+    border-color: #a0c8c8;
     text-decoration: none;
 }
 
 .social { display: none; position: absolute; right: 0; top: 100%; background: #fff;
-    border: 1px solid #dde5f0; box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    border: 1px solid #cde3e3; box-shadow: 0 4px 12px rgba(0,0,0,0.12);
     min-width: 160px; z-index: 100; padding: 6px 0; }
 .social.is-opened { display: block; }
 .social ul { list-style: none; margin: 0; padding: 0; }
 .social ul li a { display: flex; align-items: center; gap: 8px; padding: 7px 14px;
     font-size: 13px; color: #333; }
-.social ul li a:hover { background: #f0f4f9; text-decoration: none; }
+.social ul li a:hover { background: #f0f6f6; text-decoration: none; }
 
 /* ============================================================
    CONTENT WRAPPER  (#u-content-wrapper)
@@ -317,10 +323,10 @@ ul.main-menu > li > ul > li > a:hover {
 .title-box-animation h1 {
     font-size: 26px;
     font-weight: 700;
-    color: #003087;
+    color: #012d5c;
     margin-bottom: 6px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #003087;
+    border-bottom: 2px solid #012d5c;
     display: inline-block;
 }
 
@@ -393,7 +399,7 @@ ul.slideshow > li.active {
 
 /* Fallback gradient for slides without a photo */
 .slide-wrapper {
-    background: linear-gradient(135deg, #001530 0%, #002970 40%, #004090 100%);
+    background: linear-gradient(135deg, #011222 0%, #012d5c 40%, #17807f 100%);
 }
 
 /* Slide photo */
@@ -413,7 +419,7 @@ ul.slideshow > li.active {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(0, 20, 60, 0.45);
+    background: rgba(1, 45, 92, 0.45);
     z-index: 1;
 }
 
@@ -422,7 +428,7 @@ ul.slideshow > li.active {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 48, 135, 0.75);
+    background: rgba(1, 45, 92, 0.75);
     padding: 16px 30px;
     backdrop-filter: blur(2px);
     z-index: 2;
@@ -478,15 +484,15 @@ ul.slideshow > li.active {
     cursor: pointer;
     transition: background 0.2s;
 }
-.slide-dot.active { background: #fff; }
+.slide-dot.active { background: #17807f; }
 
 /* ============================================================
    PARTNER / SPONSOR section  (#u-sponsor)
    ============================================================ */
 
 #u-sponsor {
-    background: #f0f4f9;
-    border-top: 1px solid #dde5f0;
+    background: #f0f6f6;
+    border-top: 1px solid #cde3e3;
     padding: 36px 40px 40px;
     margin-top: 0;
 }
@@ -504,7 +510,7 @@ ul.slideshow > li.active {
 }
 
 .skewing {
-    background: #003087;
+    background: #012d5c;
     color: #fff;
     font-size: 15px;
     font-weight: 600;
@@ -551,38 +557,38 @@ ul.set-icons-inplace li img:hover { opacity: 1; }
 
 /* Overview data list */
 .project-data p { margin-bottom: 2px; }
-.project-data p strong { display: block; font-size: 13px; color: #003087;
+.project-data p strong { display: block; font-size: 13px; color: #012d5c;
     text-transform: uppercase; letter-spacing: 0.05em; margin-top: 14px; }
 .project-data p:first-of-type strong { margin-top: 0; }
 .project-data p:not(:has(strong)) { padding-left: 0; color: #333; font-size: 15px; }
 
 /* Definition-list style for overview */
 .data-table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
-.data-table tr { border-bottom: 1px solid #e8eef8; }
+.data-table tr { border-bottom: 1px solid #e0eeee; }
 .data-table tr:last-child { border-bottom: none; }
 .data-table td { padding: 10px 12px; font-size: 14.5px; vertical-align: top; }
 .data-table td:first-child {
     font-weight: 700;
-    color: #003087;
+    color: #012d5c;
     width: 200px;
     white-space: nowrap;
 }
-.data-table tr:nth-child(even) td { background: #f7faff; }
+.data-table tr:nth-child(even) td { background: #f4fafa; }
 
 /* "In evidenza" box on Overview page */
 .in-evidenza {
     margin-top: 30px;
     padding-top: 20px;
-    border-top: 1px solid #dde5f0;
+    border-top: 1px solid #cde3e3;
 }
 .in-evidenza h2 {
     font-size: 17px;
-    color: #003087;
+    color: #012d5c;
     margin-bottom: 16px;
 }
 .in-evidenza-item {
-    background: #f0f4f9;
-    border-left: 4px solid #003087;
+    background: #f0f6f6;
+    border-left: 4px solid #012d5c;
     border-radius: 0 4px 4px 0;
     padding: 14px 18px;
     margin-bottom: 12px;
@@ -593,17 +599,17 @@ ul.set-icons-inplace li img:hover { opacity: 1; }
 /* WP list */
 .wp-item {
     margin-bottom: 20px;
-    border: 1px solid #dde5f0;
-    border-left: 5px solid #003087;
+    border: 1px solid #cde3e3;
+    border-left: 5px solid #012d5c;
     border-radius: 0 4px 4px 0;
     padding: 18px 20px;
     background: #fff;
 }
-.wp-item:nth-child(even) { border-left-color: #0055A5; }
+.wp-item:nth-child(even) { border-left-color: #17807f; }
 
 .wp-header { display: flex; align-items: baseline; gap: 12px; margin-bottom: 8px; flex-wrap: wrap; }
 .wp-badge {
-    background: #003087;
+    background: #012d5c;
     color: #fff;
     font-size: 12px;
     font-weight: 700;
@@ -611,10 +617,10 @@ ul.set-icons-inplace li img:hover { opacity: 1; }
     border-radius: 2px;
     white-space: nowrap;
 }
-.wp-item:nth-child(even) .wp-badge { background: #0055A5; }
-.wp-item h3 { font-size: 16px; font-weight: 700; color: #003087; margin: 0; }
+.wp-item:nth-child(even) .wp-badge { background: #17807f; }
+.wp-item h3 { font-size: 16px; font-weight: 700; color: #012d5c; margin: 0; }
 .wp-coord { font-size: 13px; color: #666; margin-bottom: 10px; }
-.wp-coord strong { color: #003087; }
+.wp-coord strong { color: #012d5c; }
 .wp-item p { font-size: 14.5px; text-align: justify; }
 .wp-item p + p { margin-top: 8px; }
 
@@ -626,16 +632,16 @@ ul.set-icons-inplace li img:hover { opacity: 1; }
     margin: 24px 0 36px;
 }
 .partner-box {
-    border: 1px solid #dde5f0;
-    border-top: 4px solid #003087;
+    border: 1px solid #cde3e3;
+    border-top: 4px solid #012d5c;
     border-radius: 0 0 4px 4px;
     padding: 32px 28px 24px;
     text-align: center;
     background: #fff;
-    box-shadow: 0 2px 8px rgba(0,48,135,0.06);
+    box-shadow: 0 2px 8px rgba(1,45,92,0.06);
     transition: box-shadow 0.2s;
 }
-.partner-box:hover { box-shadow: 0 4px 16px rgba(0,48,135,0.12); }
+.partner-box:hover { box-shadow: 0 4px 16px rgba(1,45,92,0.12); }
 /* Fixed-height logo container — all logos same display area */
 .partner-box .logo-wrap {
     width: 100%;
@@ -653,7 +659,7 @@ ul.set-icons-inplace li img:hover { opacity: 1; }
     object-fit: contain;
     display: block;
 }
-.partner-box h3 { font-size: 17px; font-weight: 700; color: #003087; margin-bottom: 8px; }
+.partner-box h3 { font-size: 17px; font-weight: 700; color: #012d5c; margin-bottom: 8px; }
 .partner-box p { font-size: 14px; color: #666; line-height: 1.6; }
 
 @media (max-width: 640px) {
@@ -668,28 +674,28 @@ ul.set-icons-inplace li img:hover { opacity: 1; }
     margin: 24px 0;
 }
 .referente-box {
-    border: 1px solid #dde5f0;
-    border-top: 4px solid #003087;
+    border: 1px solid #cde3e3;
+    border-top: 4px solid #012d5c;
     border-radius: 0 0 4px 4px;
     padding: 20px 18px;
     background: #fff;
-    box-shadow: 0 2px 8px rgba(0,48,135,0.06);
+    box-shadow: 0 2px 8px rgba(1,45,92,0.06);
 }
 .referente-box .role {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #0055A5;
+    color: #17807f;
     font-weight: 700;
     margin-bottom: 8px;
 }
-.referente-box h3 { font-size: 16px; font-weight: 700; color: #003087; margin-bottom: 6px; }
+.referente-box h3 { font-size: 16px; font-weight: 700; color: #012d5c; margin-bottom: 6px; }
 .referente-box .affiliation { font-size: 13px; color: #666; }
 
 /* Empty placeholder */
 .empty-placeholder {
-    background: #f7faff;
-    border: 2px dashed #c0d0e8;
+    background: #f4fafa;
+    border: 2px dashed #a0c8c8;
     border-radius: 4px;
     padding: 50px 30px;
     text-align: center;
@@ -705,14 +711,14 @@ ul.set-icons-inplace li img:hover { opacity: 1; }
     gap: 16px;
     align-items: flex-start;
     padding: 14px 0;
-    border-bottom: 1px solid #eef2fb;
+    border-bottom: 1px solid #eaf4f4;
 }
 .risultato:last-child { border-bottom: none; }
 .risultato-n {
     flex-shrink: 0;
     width: 30px;
     height: 30px;
-    background: #003087;
+    background: #012d5c;
     color: #fff;
     border-radius: 50%;
     display: flex;
@@ -723,15 +729,15 @@ ul.set-icons-inplace li img:hover { opacity: 1; }
     margin-top: 2px;
 }
 .risultato p { margin: 0; font-size: 14.5px; }
-.risultato p em { color: #003087; font-style: italic; font-weight: 600; }
+.risultato p em { color: #17807f; font-style: italic; font-weight: 600; }
 
 /* Documents sub-section headers */
 .docs-section h2 {
     font-size: 18px;
-    color: #003087;
+    color: #012d5c;
     margin: 28px 0 12px;
     padding-bottom: 6px;
-    border-bottom: 1px solid #dde5f0;
+    border-bottom: 1px solid #cde3e3;
 }
 
 /* Condividi / share bar on inner pages */
@@ -746,14 +752,14 @@ ul.set-icons-inplace li img:hover { opacity: 1; }
 }
 .condividi-bar span { font-weight: 600; }
 .condividi-bar a {
-    color: #003087;
-    border: 1px solid #c0d0e8;
+    color: #012d5c;
+    border: 1px solid #a0c8c8;
     padding: 3px 10px;
     border-radius: 3px;
     font-size: 12px;
     transition: background 0.15s;
 }
-.condividi-bar a:hover { background: #e8f0fb; text-decoration: none; }
+.condividi-bar a:hover { background: #e0f0ef; text-decoration: none; }
 
 /* ============================================================
    FOOTER  (#u-footer)
@@ -775,8 +781,8 @@ ul.set-icons-inplace li img:hover { opacity: 1; }
     color: #aaa;
     line-height: 1.8;
 }
-.copyright a { color: #7aacf0; }
-.copyright a:hover { color: #a8c8ff; }
+.copyright a { color: #17807f; }
+.copyright a:hover { color: #3ca5a4; }
 
 /* Torna su link */
 .torna-su {
@@ -797,6 +803,7 @@ ul.set-icons-inplace li img:hover { opacity: 1; }
 @media (max-width: 768px) {
     .prime-banner { padding: 16px 20px; }
     .prime-banner-acronym { font-size: 34px; }
+    .prime-banner-logo { height: 50px; }
     .prime-banner-text { font-size: 13px; }
     .textual-header { padding: 10px 20px; }
     #u-toolbar { padding: 0 20px; }
@@ -807,7 +814,7 @@ ul.set-icons-inplace li img:hover { opacity: 1; }
         display: none;
         flex-direction: column;
         padding: 0;
-        background: #001F5B;
+        background: #011d3d;
     }
     ul.main-menu.open { display: flex; }
     ul.main-menu > li > a { padding: 13px 20px; border-bottom: 1px solid rgba(255,255,255,0.08); }
@@ -815,7 +822,7 @@ ul.set-icons-inplace li img:hover { opacity: 1; }
     ul.main-menu > li > ul {
         position: static;
         box-shadow: none;
-        background: #000E3A;
+        background: #010e22;
     }
     ul.main-menu > li > ul > li > a { padding-left: 36px; }
 
