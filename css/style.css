@@ -551,6 +551,11 @@ ul.set-icons-inplace li img {
 
 ul.set-icons-inplace li img:hover { opacity: 1; }
 
+ul.set-icons-inplace li img.sponsor-prime {
+    max-height: 180px;
+    max-width: 400px;
+}
+
 /* ============================================================
    INNER PAGE CONTENT STYLES
    ============================================================ */
