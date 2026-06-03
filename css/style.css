@@ -556,6 +556,12 @@ ul.set-icons-inplace li img.sponsor-prime {
     max-width: 800px;
 }
 
+.project-logo {
+    height: 72px;
+    width: auto;
+    display: block;
+}
+
 /* ============================================================
    INNER PAGE CONTENT STYLES
    ============================================================ */
