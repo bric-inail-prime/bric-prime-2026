@@ -1,2 +1,8 @@
+# Secrets — never commit these
+.env
+.env.*
+!.env.example
 token_resent_nox
+
+# OS files
 .DS_Store
