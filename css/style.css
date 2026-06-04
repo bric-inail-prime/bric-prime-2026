@@ -414,11 +414,6 @@ ul.slideshow > li.active {
     z-index: 0;
 }
 
-/* Show the whole image without cropping (letterboxed on the gradient) */
-.slide-wrapper img.slide-photo.slide-photo-contain {
-    object-fit: contain;
-}
-
 /* Dark overlay so text stays readable over photos */
 .slide-wrapper::before {
     content: '';
